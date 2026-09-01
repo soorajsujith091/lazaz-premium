@@ -1,17 +1,20 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronRight } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Products', href: '#products' },
-  { label: 'Why Us', href: '#why-us' },
-  { label: 'Clients', href: '#clients' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'HOME', href: '/' },
+  { label: 'ABOUT US', href: '/about' },
+  { label: 'SERVICES', href: '/services' },
+  { label: 'PROJECTS', href: '/projects' },
+  { label: 'WORK WITH US', href: '/work-with-us' },
+  { label: 'GALLERY', href: '/gallery' },
 ];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +28,11 @@ export default function Navbar() {
     setIsMobileMenuOpen(false);
   };
 
+  const isActive = (href) => {
+    if (href === '/') return location.pathname === '/';
+    return location.pathname.startsWith(href);
+  };
+
   return (
     <header
       id="navbar"
@@ -34,43 +42,47 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+      <nav className="px-8 sm:px-14 lg:px-20 font-sans" aria-label="Main navigation">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group" aria-label="Lazaz Premium - Home">
+          <Link to="/" className="flex items-center gap-3 group" aria-label="Lazaz Premium - Home">
             <img
-              src="/logo.png"
+              src="/logo-Photoroom.png"
               alt="Lazaz Premium Company Ltd"
               className="h-12 w-auto transition-transform duration-300 group-hover:scale-105"
             />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-2">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
-                className={`px-4 py-2 rounded-lg text-sm font-semibold tracking-wide transition-all duration-300 ${
-                  isScrolled
-                    ? 'text-text-dark hover:text-primary-blue hover:bg-primary-blue/5'
-                    : 'text-white/90 hover:text-white hover:bg-white/10'
+                to={link.href}
+                className={`px-3 py-2 rounded-lg text-sm font-medium tracking-wide uppercase transition-all duration-300 ${
+                  isActive(link.href)
+                    ? isScrolled
+                      ? 'text-primary-blue'
+                      : 'text-white'
+                    : isScrolled
+                      ? 'text-text-dark hover:text-primary-blue hover:bg-primary-blue/5'
+                      : 'text-white/70 hover:text-white'
                 }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* CTA Button + Mobile Toggle */}
           <div className="flex items-center gap-3">
-            <a
-              href="#contact"
-              className="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 bg-secondary-teal text-white text-sm font-bold rounded-lg hover:bg-teal-light transition-all duration-300 hover:shadow-lg hover:shadow-secondary-teal/25 hover:-translate-y-0.5"
+            <Link
+              to="/contact"
+              className="hidden sm:inline-flex items-center gap-2 px-6 py-2.5 bg-[#FBD232] text-black text-sm font-semibold rounded hover:bg-[#e5c02b] transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
             >
-              Request a Quote
-              <ChevronRight className="w-4 h-4" />
-            </a>
+              CONTACT US
+              <ArrowUpRight className="w-4 h-4" />
+            </Link>
 
             {/* Mobile Menu Toggle */}
             <button
@@ -97,24 +109,29 @@ export default function Navbar() {
         }`}
       >
         <div className="bg-white/98 backdrop-blur-xl border-t border-gray-100 shadow-xl">
-          <div className="max-w-7xl mx-auto px-4 py-4 space-y-1">
+          <div className="px-8 py-4 space-y-1">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                to={link.href}
                 onClick={handleLinkClick}
-                className="block px-4 py-3 rounded-lg text-text-dark font-semibold hover:bg-primary-blue/5 hover:text-primary-blue transition-all duration-200"
+                className={`block px-4 py-3 rounded-lg font-medium uppercase transition-all duration-200 ${
+                  isActive(link.href)
+                    ? 'text-primary-blue bg-primary-blue/5'
+                    : 'text-text-dark hover:bg-primary-blue/5 hover:text-primary-blue'
+                }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               onClick={handleLinkClick}
-              className="block px-4 py-3 mt-2 bg-secondary-teal text-white font-bold rounded-lg text-center hover:bg-teal-light transition-all duration-200"
+              className="flex items-center justify-center gap-2 px-4 py-3 mt-2 bg-[#FBD232] text-black font-semibold rounded text-center hover:bg-[#e5c02b] transition-all duration-200"
             >
-              Request a Quote
-            </a>
+              CONTACT US
+              <ArrowUpRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default {
         'text-muted': '#5A5F73',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Sansation', 'system-ui', '-apple-system', 'sans-serif'],
       },
       animation: {
         'marquee': 'marquee 60s linear infinite',

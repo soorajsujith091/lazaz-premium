@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const backgrounds = [
   '/hero-new-bg.jpg',
-  '/female-engineers-working.jpg'
+  '/industrial-construction-site.jpg'
 ];
 
 export default function Hero() {
@@ -23,7 +23,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden group"
+      className="relative min-h-screen flex items-end overflow-hidden group"
       aria-label="Hero section"
     >
       {/* ── Background Images (Slider) ── */}
@@ -55,147 +55,83 @@ export default function Hero() {
         <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
       </button>
 
-      {/* ── Slider Indicators ── */}
-      <div className="absolute bottom-32 sm:bottom-40 left-1/2 -translate-x-1/2 z-20 flex gap-3">
-        {backgrounds.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setCurrentBg(idx)}
-            aria-label={`Go to slide ${idx + 1}`}
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-              currentBg === idx ? 'bg-white scale-125' : 'bg-white/40 hover:bg-white/70'
-            }`}
-          />
-        ))}
-      </div>
-      {/* ── Overlay Gradient ── */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-dark/90 via-primary-blue/80 to-blue-dark/90 mix-blend-multiply" />
+      {/* ── Bottom Fade / Overlay ── */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/20 sm:top-auto sm:bottom-0 sm:h-[70%] sm:from-black/80 sm:via-black/40 sm:to-transparent pointer-events-none" />
 
-      {/* ── Subtle teal accent gradient ── */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-secondary-teal/15" />
+      {/* ── Content (Bottom Positioned — Two Column on Desktop) ── */}
+      <div className="relative z-10 w-full px-8 sm:px-14 lg:px-20 pb-14 sm:pb-16 lg:pb-20">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-16">
 
-      {/* ── Geometric Grid Pattern ── */}
-      <div
-        className="absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)
-          `,
-          backgroundSize: '60px 60px',
-        }}
-      />
-
-      {/* ── Pinwheel Watermark (Top Right) ── */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/4 w-[700px] h-[700px] opacity-[0.05]">
-        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M100 0C100 0 100 100 0 100C0 100 100 100 100 200C100 200 100 100 200 100C200 100 100 100 100 0Z" fill="white"/>
-        </svg>
-      </div>
-
-      {/* ── Floating Orbs ── */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-teal-light/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary-teal/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-
-      {/* ── Content ── */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
-        {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-white/80 text-sm font-medium mb-8"
+          {/* Left Column — Heading */}
+          <div className="flex-shrink-0 lg:max-w-[55%]">
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.3 }}
+              className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-white leading-[1.08] tracking-tight"
         >
-          <span className="w-2 h-2 rounded-full bg-teal-light animate-pulse" />
-          Trusted Across the Kingdom of Saudi Arabia
-        </motion.div>
-
-        {/* Headline */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight tracking-tight mb-6"
-        >
-          Every Resource,
-          <br />
-          <span className="gradient-text">Everywhere.</span>
-        </motion.h1>
-
-        {/* Subheadline */}
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="max-w-3xl mx-auto text-lg sm:text-xl text-white/75 leading-relaxed mb-10 font-medium"
-        >
-          Your trusted bridge between global resources and regional industry — serving
-          Oil &amp; Gas, Construction, Infrastructure, and Utilities across the Kingdom
-          of Saudi Arabia.
-        </motion.p>
-
-        {/* CTAs */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <a
-            href="#contact"
-            id="hero-cta-quote"
-            className="group inline-flex items-center gap-2 px-8 py-4 bg-secondary-teal text-white font-bold text-lg rounded-xl hover:bg-teal-light transition-all duration-300 hover:shadow-2xl hover:shadow-teal-light/30 hover:-translate-y-1"
-          >
-            Request a Quote
-            <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </a>
-          <a
-            href="#products"
-            id="hero-cta-products"
-            className="group inline-flex items-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-bold text-lg rounded-xl hover:bg-white/10 hover:border-white/50 transition-all duration-300"
-          >
-            Explore Products
-            <ChevronDown className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-1" />
-          </a>
-        </motion.div>
-
-        {/* Trust Indicators */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.2 }}
-          className="mt-16 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-white/40 text-sm font-medium"
-        >
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-teal-light/50" />
-            ISO 9001 Certified
+              Every resource,{' '}
+              <br className="hidden sm:block" />
+              delivered with{' '}
+              <br className="hidden sm:block" />
+              precision.
+            </motion.h1>
           </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-teal-light/50" />
-            Aramco Approved
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-teal-light/50" />
-            Saudi Vision 2030
-          </div>
-        </motion.div>
-      </div>
 
-      {/* ── Scroll Indicator ── */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-      >
-        <div className="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center pt-2">
+          {/* Right Column — Description + Button */}
           <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-1.5 rounded-full bg-white/60"
-          />
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="lg:max-w-sm lg:pb-2"
+          >
+            <p className="text-white/60 text-sm sm:text-[15px] leading-relaxed font-normal mb-6">
+              We connect global suppliers with Saudi Arabia's leading industries — from Oil &amp; Gas 
+              and Construction to Infrastructure and Utilities. Every material sourced, every project 
+              supported, crafted to deliver <span className="text-white/90 font-medium">reliability, quality,</span> and <span className="text-white/90 font-medium">unmatched precision.</span>
+            </p>
+
+            <div className="flex items-center gap-5">
+              <a
+                href="#contact"
+                id="hero-cta-quote"
+                className="group inline-flex items-center gap-2.5 px-7 py-3.5 border border-white/40 text-white text-sm font-medium rounded-full hover:bg-white hover:text-black transition-all duration-400 backdrop-blur-sm"
+              >
+                Begin your journey
+                <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
+
+              {/* Scroll caret */}
+              <motion.div
+                animate={{ y: [0, 6, 0] }}
+                transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                className="hidden sm:block text-white/40"
+              >
+                <svg width="12" height="20" viewBox="0 0 12 20" fill="none">
+                  <path d="M6 0v16m0 0l-5-5m5 5l5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </motion.div>
+            </div>
+          </motion.div>
+
         </div>
-      </motion.div>
+
+        {/* ── Slider Indicators ── */}
+        <div className="absolute bottom-14 sm:bottom-16 lg:bottom-20 right-5 sm:right-8 lg:right-10 flex gap-2 z-20">
+          {backgrounds.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentBg(idx)}
+              aria-label={`Go to slide ${idx + 1}`}
+              className={`transition-all duration-300 rounded-full ${
+                currentBg === idx 
+                  ? 'w-6 h-2 bg-white' 
+                  : 'w-2 h-2 bg-white/40 hover:bg-white/70'
+              }`}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

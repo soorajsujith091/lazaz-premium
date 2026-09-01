@@ -1,11 +1,12 @@
 import { ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const quickLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Products', href: '#products' },
-  { label: 'Why Us', href: '#why-us' },
-  { label: 'Clients', href: '#clients' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Services', href: '/services' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 // Inline SVGs for social icons since lucide-react doesn't include brand icons
@@ -55,13 +56,13 @@ export default function Footer() {
         <div className="py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-2">
-            <a href="#" className="inline-block mb-5">
+            <Link to="/" className="inline-block mb-5">
               <img
-                src="/logo.png"
+                src="/logo-Photoroom.png"
                 alt="Lazaz Premium Company Ltd"
                 className="h-14 w-auto rounded-lg bg-white/90 px-2 py-1"
               />
-            </a>
+            </Link>
             <p className="text-2xl font-bold text-white/90 mb-4">
               Every Resource, <span className="text-teal-light">Everywhere.</span>
             </p>
@@ -78,13 +79,13 @@ export default function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="group flex items-center gap-1.5 text-white/50 hover:text-teal-light transition-colors duration-300 text-sm font-medium"
                   >
                     {link.label}
                     <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
