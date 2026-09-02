@@ -15,18 +15,18 @@ const fadeUp = {
 const categories = ['All', 'Trading', 'Heavy Equipment', 'Oil & Gas', 'Supplies'];
 
 const galleryImages = [
-  { src: 'https://images.unsplash.com/photo-1541888081155-257a3e8111e8?w=800&q=80', category: 'Supplies', title: 'Construction Materials' },
-  { src: 'https://images.unsplash.com/photo-1572027209733-85d1e21b0265?w=800&q=80', category: 'Heavy Equipment', title: 'Crane Rental' },
-  { src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80', category: 'Supplies', title: 'Industrial Spare Parts' },
-  { src: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80', category: 'Trading', title: 'Automobile Fleet' },
-  { src: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80', category: 'Oil & Gas', title: 'Energy Procurement' },
-  { src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80', category: 'Supplies', title: 'Site Facilities' },
-  { src: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80', category: 'Trading', title: 'Chemical Supplies' },
-  { src: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80', category: 'Trading', title: 'F&B Distribution' },
-  { src: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80', category: 'Trading', title: 'Scrap Processing' },
-  { src: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80', category: 'Supplies', title: 'Mechanical Parts' },
-  { src: 'https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=800&q=80', category: 'Heavy Equipment', title: 'Excavators' },
-  { src: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80', category: 'Oil & Gas', title: 'Refinery Components' },
+  { src: '/lazaz_construction_material.png', category: 'Supplies', title: 'Construction Materials' },
+  { src: '/lazaz_heavy_equipment.png', category: 'Heavy Equipment', title: 'Crane Rental' },
+  { src: '/lazaz_industrial_parts.png', category: 'Supplies', title: 'Industrial Spare Parts' },
+  { src: '/lazaz_automobile_fleet.png', category: 'Trading', title: 'Automobile Fleet' },
+  { src: '/lazaz_oil_gas.png', category: 'Oil & Gas', title: 'Energy Procurement' },
+  { src: '/lazaz_site_facilities.png', category: 'Supplies', title: 'Site Facilities' },
+  { src: '/lazaz_construction_material.png', category: 'Trading', title: 'Chemical Supplies' },
+  { src: '/lazaz_automobile_fleet.png', category: 'Trading', title: 'F&B Distribution' },
+  { src: '/lazaz_industrial_parts.png', category: 'Trading', title: 'Scrap Processing' },
+  { src: '/lazaz_heavy_equipment.png', category: 'Supplies', title: 'Mechanical Parts' },
+  { src: '/lazaz_oil_gas.png', category: 'Heavy Equipment', title: 'Excavators' },
+  { src: '/lazaz_site_facilities.png', category: 'Oil & Gas', title: 'Refinery Components' },
 ];
 
 export default function GalleryPage() {
