@@ -70,7 +70,7 @@ export default function AboutPage() {
               <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
                 <img
                   src="/about-warehouse.png"
-                  alt="Yellow Edges operations"
+                  alt="Lazaz Premium operations"
                   className="w-full h-full object-cover"
                 />
               </div>

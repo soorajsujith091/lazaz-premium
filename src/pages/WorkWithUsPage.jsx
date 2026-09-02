@@ -59,7 +59,7 @@ export default function WorkWithUsPage() {
     <>
       <PageHero
         title="Work With Us"
-        subtitle="Join a team that's building the future of Saudi Arabia's infrastructure. Explore opportunities with Yellow Edges."
+        subtitle="Join a team that's building the future of Saudi Arabia's supply chain. Explore opportunities with Lazaz Premium."
         breadcrumbs={[{ label: 'Work With Us' }]}
         backgroundImage="/industrial-construction-site.jpg"
       />
@@ -76,8 +76,8 @@ export default function WorkWithUsPage() {
           >
             <span className="text-sm font-semibold uppercase tracking-widest text-secondary-teal mb-3 block">Careers</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Why Join Our Team?</h2>
-            <p className="text-gray-500 max-w-2xl">
-              At Yellow Edges, we believe our greatest asset is our people. We're always looking for talented,
+            <p className="text-gray-600 leading-relaxed mb-6">
+              At Lazaz Premium, we believe our greatest asset is our people. We're always looking for talented,
               passionate individuals who share our commitment to excellence and innovation.
             </p>
           </motion.div>

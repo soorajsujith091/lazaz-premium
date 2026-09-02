@@ -4,7 +4,7 @@ const clients = [
   'Aramco', 'SABIC', 'NEOM', 'ARO', 'Alfanar', 'Samsung C&T', 'CNPC BGP',
   'Kidana', 'Saudi Arabia Railways (SAR)', 'Rawabi', 'Doosan', 'Eram Holdings',
   'Royal Commission for AlUla', 'L&T', 'Sinosteel', 'Almarai', 'SEPCOIII',
-  'Saudi Electricity Company', 'Acciona', 'Saipem', 'BAE Systems', 'Yellow Edges',
+  'Saudi Electricity Company', 'Acciona', 'Saipem', 'BAE Systems', 'Saudi Aramco',
   'Sinopec', 'Lantania', 'GS Inima', 'SANAD', 'Ministry of Housing', 'Mawani',
   'Tenaris', 'ACGC', 'Sendan', 'Saudi Red Sea Authority', 'National Water Company',
   'Amana', 'Target', 'Mapa', 'NCC', 'Babtain',

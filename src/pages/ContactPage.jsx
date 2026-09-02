@@ -26,7 +26,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email Us',
-    lines: ['info@yellowedges.com', 'careers@yellowedges.com'],
+    lines: ['info@lazazpremium.com', 'careers@lazazpremium.com'],
   },
   {
     icon: Clock,
