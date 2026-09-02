@@ -130,7 +130,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/[0.06] py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-sm">
-            Copyright {currentYear} &copy; Lazaz Premium Company Ltd | Made with ❤️ Creatox Designs
+            Copyright {currentYear} &copy; Lazaz Premium Company Ltd | Made with ❤️ <a href="https://creatoxdesigns.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#FBD232] transition-colors duration-300">Creatox Designs</a>
           </p>
           <p className="text-white/20 text-xs">
             Every Resource, Everywhere.

@@ -3,12 +3,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 
 const navLinks = [
-  { label: 'HOME', href: '/' },
-  { label: 'ABOUT US', href: '/about' },
-  { label: 'SERVICES', href: '/services' },
-  { label: 'PROJECTS', href: '/projects' },
-  { label: 'WORK WITH US', href: '/work-with-us' },
-  { label: 'GALLERY', href: '/gallery' },
+  { label: 'Home', href: '/' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Services', href: '/services' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Work With Us', href: '/work-with-us' },
+  { label: 'Gallery', href: '/gallery' },
 ];
 
 export default function Navbar() {
@@ -33,13 +33,17 @@ export default function Navbar() {
     return location.pathname.startsWith(href);
   };
 
+  const isHomePage = location.pathname === '/';
+
   return (
     <header
       id="navbar"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? 'bg-white/95 backdrop-blur-xl shadow-lg shadow-primary-blue/5 border-b border-gray-100'
-          : 'bg-transparent'
+          : isHomePage
+            ? 'bg-gradient-to-b from-white/80 to-transparent lg:bg-none lg:bg-transparent'
+            : 'bg-white/40 backdrop-blur-md shadow-sm border-b border-white/20'
       }`}
     >
       <nav className="px-8 sm:px-14 lg:px-20 font-sans" aria-label="Main navigation">
@@ -54,19 +58,27 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-2">
+          <div className={`hidden lg:flex items-center transition-all duration-500 ${
+            isHomePage && !isScrolled
+              ? 'gap-1 px-1.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/40 shadow-[0_4px_30px_rgba(0,0,0,0.05)]'
+              : 'gap-2'
+          }`}>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
-                className={`px-3 py-2 rounded-lg text-sm font-medium tracking-wide uppercase transition-all duration-300 ${
-                  isActive(link.href)
-                    ? isScrolled
-                      ? 'text-primary-blue'
-                      : 'text-white'
-                    : isScrolled
-                      ? 'text-text-dark hover:text-primary-blue hover:bg-primary-blue/5'
-                      : 'text-white/70 hover:text-white'
+                className={`transition-all duration-300 ${
+                  isHomePage && !isScrolled
+                    ? `px-4 py-2 rounded-full text-[14px] font-medium ${
+                        isActive(link.href)
+                          ? 'text-primary-blue bg-white shadow-sm'
+                          : 'text-gray-800 hover:text-gray-900 hover:bg-white/40'
+                      }`
+                    : `px-3 py-2 rounded-lg text-[14px] font-bold ${
+                        isActive(link.href)
+                          ? 'text-primary-blue'
+                          : 'text-gray-900 hover:text-primary-blue hover:bg-primary-blue/5'
+                      }`
                 }`}
               >
                 {link.label}
@@ -93,9 +105,9 @@ export default function Navbar() {
               aria-expanded={isMobileMenuOpen}
             >
               {isMobileMenuOpen ? (
-                <X className={`w-6 h-6 ${isScrolled ? 'text-text-dark' : 'text-white'}`} />
+                <X className="w-6 h-6 text-gray-900" />
               ) : (
-                <Menu className={`w-6 h-6 ${isScrolled ? 'text-text-dark' : 'text-white'}`} />
+                <Menu className="w-6 h-6 text-gray-900" />
               )}
             </button>
           </div>
