@@ -49,20 +49,13 @@ export default function AboutPage() {
             >
               <span className="text-sm font-semibold uppercase tracking-widest text-secondary-teal mb-3 block">Who We Are</span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
-                Welcome to Yellow Edges Contracting Company
+                Welcome to Lazaz Premium
               </h2>
               <p className="text-gray-600 leading-relaxed mb-5">
-                Yellow Edges Al Arabia Contracting Company is a leading infrastructure and construction
-                firm based in Saudi Arabia, driven by a commitment to quality, innovation, and timely execution.
-                With a reputation built on trust and technical excellence, we deliver comprehensive solutions
-                across a wide spectrum of projects — from essential infrastructure such as asphalt paving and
-                cross-country piping to the development of modern commercial and residential buildings that
-                blend functionality with design.
+                Lazaz Premium is a leading material trading and automobile trading company based in the Kingdom of Saudi Arabia (KSA), specializing in supplying premium-quality industrial, construction, engineering, and infrastructure materials to businesses across various sectors. The company is committed to delivering quality products, reliable service, and long-term business partnerships.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Our young and dynamic team brings energy, precision, and a results-driven mindset to every
-                project. As we continue to grow, our focus remains on shaping environments that serve
-                communities and advancing our presence across Saudi Arabia and the wider GCC region.
+                We serve as a professional platform for engaging clients across the Kingdom of Saudi Arabia and international B2B markets. Our extensive portfolio ranges from construction materials like crusher, asphalt, electrical, ceramic, concrete, plumbing, steel, wood, to heavy equipment rental and industrial spare parts supply.
               </p>
             </motion.div>
 
@@ -129,7 +122,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-gray-900 uppercase tracking-wide">Vision</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                <strong className="text-gray-900">Our vision is to become the trusted partner of choice for construction and engineering
+                <strong className="text-gray-900">Our vision is to become the trusted partner of choice for premium material trading and supply chain
                 solutions across Saudi Arabia, the UAE, and the wider Middle East.</strong> We aspire to be
                 recognized for our unwavering commitment to quality, reliability, and a customer-focused
                 approach. By embracing advanced technologies, fostering innovation, and prioritizing
@@ -153,8 +146,8 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-gray-900 uppercase tracking-wide">Mission</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                <strong className="text-gray-900">Our mission is to deliver forward-thinking, efficient, and sustainable engineering
-                solutions that shape the future of infrastructure in Saudi Arabia.</strong> With a skilled team, a
+                <strong className="text-gray-900">Our mission is to empower regional industries by bridging the gap between global manufacturers
+                and local projects through premium sourcing and seamless logistics.</strong> With a skilled team, a
                 strong operational network, and a commitment to collaboration, we aim to consistently exceed
                 client expectations, support national development goals, and make a lasting, positive impact on
                 the communities we serve.

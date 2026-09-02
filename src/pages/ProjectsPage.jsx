@@ -15,57 +15,57 @@ const fadeUp = {
 const projects = [
   {
     num: '01',
-    title: 'Building Construction',
+    title: 'Construction Material Supply for Commercial Complex',
     image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
-    category: 'Construction',
+    category: 'Material Supply',
   },
   {
     num: '02',
-    title: 'Road Construction',
+    title: 'Heavy Equipment Rental for Infrastructure Project',
     image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80',
-    category: 'Infrastructure',
+    category: 'Equipment Rental',
   },
   {
     num: '03',
-    title: 'Cross Country Pipeline',
+    title: 'Industrial Spare Parts Sourcing for Manufacturing Plant',
     image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&q=80',
-    category: 'Oil & Gas',
+    category: 'Spare Parts',
   },
   {
     num: '04',
-    title: 'Wasit Gas Plant — Infrastructure Works',
+    title: 'Automobile Fleet Trading for Logistics Partner',
     image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80',
-    category: 'Oil & Gas',
+    category: 'Automotive',
   },
   {
     num: '05',
-    title: 'Jafurah Gas Plant — Civil & Road Works',
+    title: 'Oil & Gas Equipment Procurement',
     image: 'https://images.unsplash.com/photo-1590846083693-f23fdede3a7e?w=800&q=80',
-    category: 'Oil & Gas',
+    category: 'Energy Trading',
   },
   {
     num: '06',
-    title: 'Fadhili Gas Plant — Civil & Infrastructure',
+    title: 'Site Facilities & IT Equipment for Remote Camp',
     image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80',
-    category: 'Oil & Gas',
+    category: 'Site Facilities',
   },
   {
     num: '07',
-    title: 'Jubail 3B SWRO Plant — Civil Works',
+    title: 'Chemical & Scientific Supplies for Research Lab',
     image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
-    category: 'Desalination',
+    category: 'Chemicals',
   },
   {
     num: '08',
-    title: 'Shuqaiq 3 SWRO Plant — Civil & Road Works',
+    title: 'Food & Beverage Distribution for Hospitality Group',
     image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80',
-    category: 'Desalination',
+    category: 'F&B Trading',
   },
   {
     num: '09',
-    title: 'Residential & Commercial Projects',
+    title: 'Scrap Processing for Industrial Estate',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
-    category: 'Construction',
+    category: 'Waste Processing',
   },
 ];
 
@@ -74,7 +74,7 @@ export default function ProjectsPage() {
     <>
       <PageHero
         title="Our Projects"
-        subtitle="A portfolio of landmark projects across Oil & Gas, Infrastructure, Construction, and Desalination."
+        subtitle="A portfolio of successful supply operations and trading partnerships across various industries."
         breadcrumbs={[{ label: 'Projects' }]}
         backgroundImage="/industrial-construction-site.jpg"
       />

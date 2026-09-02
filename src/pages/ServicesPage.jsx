@@ -15,63 +15,63 @@ const fadeUp = {
 const services = [
   {
     num: '01',
-    title: 'Construction of Desalination Plant',
-    desc: 'Engineering and construction of state-of-the-art desalination facilities to deliver clean water solutions across the Kingdom.',
+    title: 'Construction Materials Trading',
+    desc: 'Supply of premium materials including crusher, asphalt, electrical, painting, ceramic, concrete, plumbing, steel, and wood.',
   },
   {
     num: '02',
-    title: 'Construction of Power/Gas Plant',
-    desc: 'Building power and gas processing facilities with precision engineering and adherence to international safety standards.',
+    title: 'Scrap & Waste Processing',
+    desc: 'Efficient and sustainable solutions for scrap materials and industrial waste management processing.',
   },
   {
     num: '03',
-    title: 'Infrastructure and Civil Works',
-    desc: 'Comprehensive civil construction including drainage, utilities, sewage systems, and foundation works.',
+    title: 'Mechanical Industries Support',
+    desc: 'Comprehensive supply and support services tailored for mechanical manufacturing and industrial operations.',
   },
   {
     num: '04',
-    title: 'Piling, Shoring & Dewatering',
-    desc: 'Specialized geotechnical solutions for deep foundations, earth retention, and groundwater control.',
+    title: 'Oil, Gas & Energy Trading',
+    desc: 'Reliable sourcing and trading of essential materials, components, and equipment for the energy sector.',
   },
   {
     num: '05',
-    title: 'Road Construction',
-    desc: 'Asphalt paving, highway development, and road infrastructure connecting communities across Saudi Arabia.',
+    title: 'Heavy Equipment Rental',
+    desc: 'Providing robust heavy machinery, equipment rentals, and manufacturing machine spare parts for major projects.',
   },
   {
     num: '06',
-    title: 'Construction of Hotels/Apartments',
-    desc: 'Multi-storey residential and hospitality buildings designed for modern living and commercial success.',
+    title: 'Chemicals & Scientific Trading',
+    desc: 'Specialized procurement and supply of high-grade chemicals, laboratory equipment, and scientific instruments.',
   },
   {
     num: '07',
-    title: 'Construction of Villa Projects',
-    desc: 'Premium villa developments that blend contemporary design with functional luxury.',
+    title: 'Food & Beverage Trading',
+    desc: 'Trading and distribution of quality food and beverage products to meet various commercial and industrial needs.',
   },
   {
     num: '08',
-    title: 'High Security Fencing',
-    desc: 'Installation of all types of high-security fencing systems for industrial and government facilities.',
+    title: 'Industrial Spare Parts Supply',
+    desc: 'Sourcing and delivering critical spare parts for heavy equipment and manufacturing machines.',
   },
   {
     num: '09',
-    title: 'Supply of Construction Materials',
-    desc: 'Sourcing and delivering quality construction materials from global suppliers to project sites.',
+    title: 'International Procurement',
+    desc: 'Global sourcing strategies to ensure the reliable supply of premium products from international markets.',
   },
   {
     num: '10',
-    title: 'Landscaping & Irrigation',
-    desc: 'Green infrastructure solutions including landscaping, irrigation networks, and beautification works.',
+    title: 'Factory Direct Supply',
+    desc: 'Direct from factory supply for electrical components, industrial tools, and essential operational materials.',
   },
   {
     num: '11',
-    title: 'Architectural Interiors',
-    desc: 'Premium interior fit-out solutions for commercial, residential, and hospitality spaces.',
+    title: 'Site Facilities & Equipment',
+    desc: 'Providing complete site facilities including portables, ACs, generators, office facilities, and IT equipment like PCs and printers.',
   },
   {
     num: '12',
-    title: 'General Trading',
-    desc: 'Comprehensive trading services covering industrial equipment, spare parts, and operational supplies.',
+    title: 'Automobile Trading',
+    desc: 'Premium automobile trading services offering a wide range of vehicles for commercial and industrial use.',
   },
 ];
 
@@ -80,7 +80,7 @@ export default function ServicesPage() {
     <>
       <PageHero
         title="Our Services"
-        subtitle="Comprehensive construction and engineering solutions delivered with precision and excellence."
+        subtitle="Comprehensive material trading and supply chain solutions delivered with precision and excellence."
         breadcrumbs={[{ label: 'Services' }]}
         backgroundImage="/industrial-construction-site.jpg"
       />
