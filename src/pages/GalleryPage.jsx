@@ -12,21 +12,21 @@ const fadeUp = {
   }),
 };
 
-const categories = ['All', 'Construction', 'Infrastructure', 'Oil & Gas', 'Interiors'];
+const categories = ['All', 'Trading', 'Heavy Equipment', 'Oil & Gas', 'Supplies'];
 
 const galleryImages = [
-  { src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80', category: 'Construction', title: 'Building Construction' },
-  { src: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80', category: 'Infrastructure', title: 'Road Development' },
-  { src: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&q=80', category: 'Oil & Gas', title: 'Pipeline Installation' },
-  { src: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80', category: 'Oil & Gas', title: 'Gas Plant Operations' },
-  { src: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80', category: 'Construction', title: 'Commercial Building' },
-  { src: 'https://images.unsplash.com/photo-1590846083693-f23fdede3a7e?w=800&q=80', category: 'Oil & Gas', title: 'Processing Facility' },
-  { src: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80', category: 'Infrastructure', title: 'Civil Works' },
-  { src: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80', category: 'Construction', title: 'Structural Framework' },
-  { src: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80', category: 'Interiors', title: 'Modern Interior Design' },
-  { src: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80', category: 'Construction', title: 'Villa Project' },
-  { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', category: 'Interiors', title: 'Luxury Interior' },
-  { src: 'https://images.unsplash.com/photo-1590479773265-7464e5d48118?w=800&q=80', category: 'Infrastructure', title: 'Heavy Equipment at Work' },
+  { src: 'https://images.unsplash.com/photo-1541888081155-257a3e8111e8?w=800&q=80', category: 'Supplies', title: 'Construction Materials' },
+  { src: 'https://images.unsplash.com/photo-1572027209733-85d1e21b0265?w=800&q=80', category: 'Heavy Equipment', title: 'Crane Rental' },
+  { src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80', category: 'Supplies', title: 'Industrial Spare Parts' },
+  { src: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80', category: 'Trading', title: 'Automobile Fleet' },
+  { src: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80', category: 'Oil & Gas', title: 'Energy Procurement' },
+  { src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80', category: 'Supplies', title: 'Site Facilities' },
+  { src: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80', category: 'Trading', title: 'Chemical Supplies' },
+  { src: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80', category: 'Trading', title: 'F&B Distribution' },
+  { src: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80', category: 'Trading', title: 'Scrap Processing' },
+  { src: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80', category: 'Supplies', title: 'Mechanical Parts' },
+  { src: 'https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=800&q=80', category: 'Heavy Equipment', title: 'Excavators' },
+  { src: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80', category: 'Oil & Gas', title: 'Refinery Components' },
 ];
 
 export default function GalleryPage() {
