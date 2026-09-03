@@ -225,7 +225,7 @@ export default function Contact() {
 
                 {/* WhatsApp Button */}
                 <a
-                  href="https://wa.me/966XXXXXXXXX"
+                  href="https://wa.me/966559002508"
                   target="_blank"
                   rel="noopener noreferrer"
                   id="whatsapp-button"
@@ -269,8 +269,8 @@ export default function Contact() {
                 <div>
                   <h4 className="text-sm font-bold text-text-dark mb-0.5">Address</h4>
                   <p className="text-sm text-text-muted leading-relaxed">
-                    Building #2927, King Faisal Road,<br />
-                    At Tubayshi District, Dammam 32233,<br />
+                    Building 8053, Prince Nawaf Ibn Abdulaziz St,<br />
+                    Al Khubar Ash Shamaliyah Dist., Al Khobar 34426,<br />
                     Kingdom of Saudi Arabia
                   </p>
                 </div>

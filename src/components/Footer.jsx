@@ -97,8 +97,8 @@ export default function Footer() {
             <div className="space-y-4 text-sm">
               <div>
                 <p className="text-white/50 leading-relaxed">
-                  Building #2927, King Faisal Road,<br />
-                  At Tubayshi District, Dammam 32233,<br />
+                  Building 8053, Prince Nawaf Ibn Abdulaziz St,<br />
+                  Al Khubar Ash Shamaliyah Dist., Al Khobar 34426,<br />
                   Kingdom of Saudi Arabia
                 </p>
               </div>

@@ -16,12 +16,12 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Visit Us',
-    lines: ['Building #2927, King Faisal Road', 'At Tubayshi District, Dammam 32233', 'Kingdom of Saudi Arabia'],
+    lines: ['Building 8053, Prince Nawaf Ibn Abdulaziz St', 'Al Khubar Ash Shamaliyah Dist., Al Khobar 34426', 'Kingdom of Saudi Arabia'],
   },
   {
     icon: Phone,
     title: 'Call Us',
-    lines: ['+966 13 XXX XXXX', '+966 5X XXX XXXX'],
+    lines: ['+966 13 823 4533', '+966 55 900 2508'],
   },
   {
     icon: Mail,
