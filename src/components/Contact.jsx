@@ -285,6 +285,19 @@ export default function Contact() {
                   <p className="text-sm text-text-muted">CR: 7052382889</p>
                 </div>
               </div>
+
+              <div className="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100">
+                <div className="w-10 h-10 bg-primary-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-5 h-5 text-primary-blue" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold text-text-dark mb-0.5">Contact Details</h4>
+                  <p className="text-sm text-text-muted leading-relaxed">
+                    <span className="font-medium text-text-dark">Line:</span> +966 13 823 4533<br />
+                    <span className="font-medium text-text-dark">Official Number:</span> +966 55 900 2508
+                  </p>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
