@@ -58,7 +58,7 @@ export default function About() {
             </p>
           </motion.div>
           <motion.div custom={3} variants={fadeInUp} className="rounded-2xl overflow-hidden shadow-xl h-64 lg:h-80 w-full">
-            <img src="/about-warehouse.png" alt="Warehouse operations" className="w-full h-full object-cover" />
+            <img src="/female-engineers-working.jpg" alt="Female engineers working" className="w-full h-full object-cover" />
           </motion.div>
         </motion.div>
 

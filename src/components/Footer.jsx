@@ -106,6 +106,14 @@ export default function Footer() {
                 <span className="text-white/30 text-xs font-semibold uppercase tracking-wider">CR Number</span>
                 <p className="text-white/60 font-medium mt-0.5">7052382889</p>
               </div>
+              <div>
+                <span className="text-white/30 text-xs font-semibold uppercase tracking-wider">Line</span>
+                <p className="text-white/60 font-medium mt-0.5">+966 13 823 4533</p>
+              </div>
+              <div>
+                <span className="text-white/30 text-xs font-semibold uppercase tracking-wider">Official Number</span>
+                <p className="text-white/60 font-medium mt-0.5">+966 55 900 2508</p>
+              </div>
             </div>
 
             {/* Social Icons */}
