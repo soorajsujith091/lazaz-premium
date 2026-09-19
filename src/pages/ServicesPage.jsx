@@ -17,61 +17,73 @@ const services = [
     num: '01',
     title: 'Construction Materials Trading',
     desc: 'Supply of premium materials including crusher, asphalt, electrical, painting, ceramic, concrete, plumbing, steel, and wood.',
+    image: 'https://images.unsplash.com/photo-1541888086225-f67375dbfb00?auto=format&fit=crop&q=80&w=800'
   },
   {
     num: '02',
     title: 'Scrap & Waste Processing',
     desc: 'Efficient and sustainable solutions for scrap materials and industrial waste management processing.',
+    image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=800'
   },
   {
     num: '03',
     title: 'Mechanical Industries Support',
     desc: 'Comprehensive supply and support services tailored for mechanical manufacturing and industrial operations.',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800'
   },
   {
     num: '04',
     title: 'Oil, Gas & Energy Trading',
     desc: 'Reliable sourcing and trading of essential materials, components, and equipment for the energy sector.',
+    image: 'https://images.unsplash.com/photo-1563906267088-b029e7101114?auto=format&fit=crop&q=80&w=800'
   },
   {
     num: '05',
     title: 'Heavy Equipment Rental',
     desc: 'Providing robust heavy machinery, equipment rentals, and manufacturing machine spare parts for major projects.',
+    image: 'https://images.unsplash.com/photo-1572004245781-a58f44778ee9?auto=format&fit=crop&q=80&w=800'
   },
   {
     num: '06',
     title: 'Chemicals & Scientific Trading',
     desc: 'Specialized procurement and supply of high-grade chemicals, laboratory equipment, and scientific instruments.',
+    image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800'
   },
   {
     num: '07',
     title: 'Food & Beverage Trading',
     desc: 'Trading and distribution of quality food and beverage products to meet various commercial and industrial needs.',
+    image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800'
   },
   {
     num: '08',
     title: 'Industrial Spare Parts Supply',
     desc: 'Sourcing and delivering critical spare parts for heavy equipment and manufacturing machines.',
+    image: 'https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&q=80&w=800'
   },
   {
     num: '09',
     title: 'International Procurement',
     desc: 'Global sourcing strategies to ensure the reliable supply of premium products from international markets.',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800'
   },
   {
     num: '10',
     title: 'Factory Direct Supply',
     desc: 'Direct from factory supply for electrical components, industrial tools, and essential operational materials.',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356f27?auto=format&fit=crop&q=80&w=800'
   },
   {
     num: '11',
     title: 'Site Facilities & Equipment',
     desc: 'Providing complete site facilities including portables, ACs, generators, office facilities, and IT equipment like PCs and printers.',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800'
   },
   {
     num: '12',
     title: 'Automobile Trading',
     desc: 'Premium automobile trading services offering a wide range of vehicles for commercial and industrial use.',
+    image: 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&q=80&w=800'
   },
 ];
 
@@ -110,25 +122,39 @@ export default function ServicesPage() {
                 custom={i}
                 className="group relative p-7 rounded-2xl bg-gray-50 border border-gray-100 hover:bg-gray-900 hover:border-gray-800 transition-all duration-500 cursor-pointer overflow-hidden"
               >
-                {/* Number */}
-                <div className="text-5xl font-extrabold text-gray-100 group-hover:text-gray-800 transition-colors duration-500 mb-6 select-none">
-                  {service.num}
+                {/* Background Image (Reveals on hover) */}
+                <div className="absolute inset-0 z-0">
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover opacity-0 group-hover:opacity-30 group-hover:scale-110 transition-all duration-700 ease-in-out" 
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gray-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
 
-                {/* Title */}
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 transition-colors duration-500 leading-snug">
-                  {service.title}
-                </h3>
+                {/* Content */}
+                <div className="relative z-10 flex flex-col h-full">
+                  {/* Number */}
+                  <div className="text-5xl font-extrabold text-gray-200 group-hover:text-gray-400 transition-colors duration-500 mb-6 select-none">
+                    {service.num}
+                  </div>
 
-                {/* Description */}
-                <p className="text-sm text-gray-500 group-hover:text-gray-400 leading-relaxed transition-colors duration-500">
-                  {service.desc}
-                </p>
+                  {/* Title */}
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 transition-colors duration-500 leading-snug">
+                    {service.title}
+                  </h3>
 
-                {/* Hover arrow */}
-                <div className="mt-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">
-                    <ArrowUpRight className="w-4 h-4 text-white" />
+                  {/* Description */}
+                  <p className="text-sm text-gray-500 group-hover:text-gray-300 leading-relaxed transition-colors duration-500 flex-grow">
+                    {service.desc}
+                  </p>
+
+                  {/* Hover arrow */}
+                  <div className="mt-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center bg-white/10 backdrop-blur-sm group-hover:bg-secondary-teal group-hover:border-secondary-teal transition-all duration-300">
+                      <ArrowUpRight className="w-4 h-4 text-white" />
+                    </div>
                   </div>
                 </div>
               </motion.div>

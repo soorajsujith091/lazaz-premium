@@ -10,6 +10,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import WorkWithUsPage from './pages/WorkWithUsPage';
 import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
+import ProductDetailPage from './pages/ProductDetailPage';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/work-with-us" element={<WorkWithUsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/products/:id" element={<ProductDetailPage />} />
         </Routes>
       </main>
       <Footer />
