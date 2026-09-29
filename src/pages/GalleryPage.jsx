@@ -43,7 +43,7 @@ export default function GalleryPage() {
         title="Gallery"
         subtitle="A visual showcase of our projects, craftsmanship, and dedication to excellence across Saudi Arabia."
         breadcrumbs={[{ label: 'Gallery' }]}
-        backgroundImage="/industrial-construction-site.jpg"
+        backgroundImage="/worker-leveling-fresh-floor-with-special-machine.jpg"
       />
 
       {/* ── Gallery ── */}

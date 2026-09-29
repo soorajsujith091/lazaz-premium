@@ -94,7 +94,7 @@ export default function ServicesPage() {
         title="Our Services"
         subtitle="Comprehensive material trading and supply chain solutions delivered with precision and excellence."
         breadcrumbs={[{ label: 'Services' }]}
-        backgroundImage="/industrial-construction-site.jpg"
+        backgroundImage="/person-working-wood-working-industry-factory.jpg"
       />
 
       {/* ── Services Grid ── */}

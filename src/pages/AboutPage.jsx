@@ -34,7 +34,7 @@ export default function AboutPage() {
         title="About Us"
         subtitle="Building trust through quality, innovation, and unwavering commitment to our partners across Saudi Arabia."
         breadcrumbs={[{ label: 'About Us' }]}
-        backgroundImage="/industrial-construction-site.jpg"
+        backgroundImage="/female-engineers-working.jpg"
       />
 
       {/* ── Who We Are ── */}

@@ -31,7 +31,7 @@ export default function ProductDetailPage() {
         title={product.name}
         subtitle="Detailed specifications and features of our supply."
         breadcrumbs={[{ label: 'Products', path: '/#products' }, { label: product.name }]}
-        backgroundImage={product.image.startsWith('http') ? product.image : '/industrial-construction-site.jpg'}
+        backgroundImage={product.image.startsWith('http') ? product.image : '/hero-new-bg.jpg'}
       />
 
       <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">

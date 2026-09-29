@@ -76,7 +76,7 @@ export default function ProjectsPage() {
         title="Our Projects"
         subtitle="A portfolio of successful supply operations and trading partnerships across various industries."
         breadcrumbs={[{ label: 'Projects' }]}
-        backgroundImage="/industrial-construction-site.jpg"
+        backgroundImage="/heavy-machinery-used-construction-industry-engineering.jpg"
       />
 
       {/* ── Projects Grid ── */}

@@ -61,7 +61,7 @@ export default function WorkWithUsPage() {
         title="Work With Us"
         subtitle="Join a team that's building the future of Saudi Arabia's supply chain. Explore opportunities with Lazaz Premium."
         breadcrumbs={[{ label: 'Work With Us' }]}
-        backgroundImage="/industrial-construction-site.jpg"
+        backgroundImage="/hero-bg.png"
       />
 
       {/* ── Why Join Us ── */}

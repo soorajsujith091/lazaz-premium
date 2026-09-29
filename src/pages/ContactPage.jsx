@@ -60,7 +60,7 @@ export default function ContactPage() {
         title="Contact Us"
         subtitle="Get in touch with our team. We'd love to hear about your project and how we can help."
         breadcrumbs={[{ label: 'Contact Us' }]}
-        backgroundImage="/industrial-construction-site.jpg"
+        backgroundImage="/scene-construction-site-with-equipment.jpg"
       />
 
       {/* ── Contact Info Cards ── */}
