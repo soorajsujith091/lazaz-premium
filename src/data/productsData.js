@@ -41,7 +41,7 @@ export const productsData = [
     id: 'electrical-materials', 
     name: 'Electrical Materials', 
     icon: Zap, 
-    image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80&w=800',
+    image: '/electrical-materials.jpg',
     description: 'Complete range of electrical components, cables, and fixtures for safe and efficient power distribution in commercial and industrial facilities.',
     features: ['Cables & Wiring', 'Switches & Panels', 'Lighting solutions', 'Safety compliant']
   },
@@ -65,7 +65,7 @@ export const productsData = [
     id: 'paints-coatings', 
     name: 'Paints & Coatings', 
     icon: Paintbrush, 
-    image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&q=80&w=800',
+    image: '/paints-coatings.jpg',
     description: 'Industrial-grade paints and protective coatings designed to withstand harsh environmental conditions while providing excellent coverage and aesthetic appeal.',
     features: ['Anti-corrosive coatings', 'Weather-resistant paints', 'Epoxy flooring solutions', 'Eco-friendly options']
   },
@@ -81,7 +81,7 @@ export const productsData = [
     id: 'office-facilities', 
     name: 'Office Facilities Supply', 
     icon: Monitor, 
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800',
+    image: '/office-facilities.jpg',
     description: 'Comprehensive office supplies including furniture, IT equipment, and administrative essentials to keep your site operations running smoothly.',
     features: ['Ergonomic furniture', 'IT hardware & PCs', 'Printers & consumables', 'Stationery']
   },
@@ -97,7 +97,7 @@ export const productsData = [
     id: 'chemicals-scientific', 
     name: 'Chemicals & Scientific Trading', 
     icon: FlaskConical, 
-    image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800',
+    image: '/chemicals-scientific.jpg',
     description: 'Specialized supply of industrial chemicals, laboratory equipment, and scientific instruments for research, manufacturing, and processing facilities.',
     features: ['Industrial solvents', 'Lab grade chemicals', 'Testing equipment', 'Safety gear']
   },
@@ -105,7 +105,7 @@ export const productsData = [
     id: 'food-beverage', 
     name: 'Food & Beverage Trading', 
     icon: Coffee, 
-    image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800',
+    image: '/food-beverage.jpg',
     description: 'Reliable distribution of bulk food products and beverages, catering to large-scale catering services, site camps, and commercial hospitality sectors.',
     features: ['Bulk provisions', 'Fresh & frozen goods', 'Beverage supply', 'Strict hygiene standards']
   },
@@ -113,7 +113,7 @@ export const productsData = [
     id: 'oil-gas-energy', 
     name: 'Oil, Gas & Energy Trading', 
     icon: Fuel, 
-    image: 'https://images.unsplash.com/photo-1563906267088-b029e7101114?auto=format&fit=crop&q=80&w=800',
+    image: '/oil-gas-facility.png',
     description: 'Specialized materials and equipment serving the demanding requirements of the oil, gas, and renewable energy sectors.',
     features: ['Piping and valves', 'Safety equipment', 'Refinery supplies', 'Renewable energy components']
   },
@@ -129,7 +129,7 @@ export const productsData = [
     id: 'scrap-waste', 
     name: 'Scrap & Waste Processing', 
     icon: Recycle, 
-    image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=800',
+    image: '/scrap-waste.jpg',
     description: 'Efficient industrial scrap management and waste processing solutions designed to maximize recycling and minimize environmental impact.',
     features: ['Metal scrap recovery', 'Industrial waste management', 'Recycling solutions', 'Environmental compliance']
   },
@@ -145,7 +145,7 @@ export const productsData = [
     id: 'site-facilities', 
     name: 'Site Facilities', 
     icon: Container, 
-    image: '/oil-gas-facility.png',
+    image: '/lazaz_site_facilities.png',
     description: 'Turnkey site facility solutions including portable cabins, HVAC units, and power generation to establish fully functional temporary work camps.',
     features: ['Portable cabins', 'Generators & AC units', 'Site lighting', 'Sanitary facilities']
   },

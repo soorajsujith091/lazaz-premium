@@ -49,7 +49,7 @@ export default function About() {
           className="grid lg:grid-cols-2 gap-10 items-center mb-16"
         >
           <motion.div custom={2} variants={fadeInUp}>
-            <p className="text-lg sm:text-xl text-text-muted leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
               Lazaz Premium Company was established with a vision to redefine the supply chain
               landscape in the region. Specializing in the sourcing and distribution of high-grade
               materials, we serve as the vital link between global manufacturers and the core
@@ -84,7 +84,7 @@ export default function About() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-text-dark mb-3">Our Vision</h3>
-                <p className="text-text-muted leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   To be the most trusted and innovative bridge between global resources and
                   regional industry, setting the gold standard for premium trading and turnkey
                   solutions in the Middle East and beyond.
@@ -108,7 +108,7 @@ export default function About() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-text-dark mb-3">Our Mission</h3>
-                <p className="text-text-muted leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   To empower regional industries by bridging the gap between global manufacturers
                   and local projects through premium sourcing, seamless logistics, and expert
                   turnkey solutions.

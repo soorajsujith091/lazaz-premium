@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ArrowLeft, ArrowUpRight, Home } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 
 const fadeUp = {
@@ -70,8 +70,38 @@ const projects = [
 ];
 
 export default function ProjectsPage() {
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    if (window.history.state?.idx > 0) {
+      navigate(-1);
+    } else {
+      navigate('/');
+    }
+  };
+
   return (
     <>
+      <nav
+        aria-label="Project page navigation"
+        className="flex flex-wrap items-center gap-3 px-8 sm:px-14 lg:px-20 pt-28 pb-5 bg-white"
+      >
+        <button
+          type="button"
+          onClick={goBack}
+          className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-100 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-teal"
+        >
+          <ArrowLeft className="w-4 h-4" aria-hidden="true" />
+          Back
+        </button>
+        <Link
+          to="/"
+          className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-100 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-teal"
+        >
+          <Home className="w-4 h-4" aria-hidden="true" />
+          Back to Home
+        </Link>
+      </nav>
       <PageHero
         title="Our Projects"
         subtitle="A portfolio of successful supply operations and trading partnerships across various industries."

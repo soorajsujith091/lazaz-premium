@@ -56,7 +56,7 @@ export default function Hero() {
       </button>
 
       {/* ── Bottom Fade / Overlay ── */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/20 sm:top-auto sm:bottom-0 sm:h-[70%] sm:from-black/80 sm:via-black/40 sm:to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-black/30 pointer-events-none" />
 
       {/* ── Content (Bottom Positioned — Two Column on Desktop) ── */}
       <div className="relative z-10 w-full px-8 sm:px-14 lg:px-20 pb-14 sm:pb-16 lg:pb-20">
@@ -68,7 +68,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.3 }}
-              className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-white leading-[1.08] tracking-tight"
+              className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-white leading-[1.08] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
         >
               Every resource,{' '}
               <br className="hidden sm:block" />
@@ -85,17 +85,17 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="lg:max-w-sm lg:pb-2"
           >
-            <p className="text-white/60 text-sm sm:text-[15px] leading-relaxed font-normal mb-6">
+            <p className="text-white/85 text-sm sm:text-[15px] leading-relaxed font-normal mb-6 drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
               We connect global suppliers with Saudi Arabia's leading industries — from Oil &amp; Gas 
               and Construction to Infrastructure and Utilities. Every material sourced, every project 
-              supported, crafted to deliver <span className="text-white/90 font-medium">reliability, quality,</span> and <span className="text-white/90 font-medium">unmatched precision.</span>
+              supported, crafted to deliver <span className="text-white font-medium">reliability, quality,</span> and <span className="text-white font-medium">unmatched precision.</span>
             </p>
 
             <div className="flex items-center gap-5">
               <a
                 href="#contact"
                 id="hero-cta-quote"
-                className="group inline-flex items-center gap-2.5 px-7 py-3.5 border border-white/40 text-white text-sm font-medium rounded-full hover:bg-white hover:text-black transition-all duration-400 backdrop-blur-sm"
+                className="group inline-flex items-center gap-2.5 px-7 py-3.5 border-2 border-white/70 text-white text-sm font-semibold rounded-full hover:bg-white hover:text-black transition-all duration-400 backdrop-blur-sm"
               >
                 Begin your journey
                 <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

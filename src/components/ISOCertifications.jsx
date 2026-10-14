@@ -66,7 +66,7 @@ export default function ISOCertifications() {
           <motion.p
             custom={1}
             variants={fadeInUp}
-            className="mt-3 text-white/60 text-lg"
+            className="mt-3 text-white/80 text-lg"
           >
             Committed to the highest standards of quality, safety, and sustainability.
           </motion.p>
@@ -93,7 +93,7 @@ export default function ISOCertifications() {
                 </div>
                 <div className="text-xl font-bold text-white mb-1">{cert.code}</div>
                 <div className="text-teal-light font-semibold text-sm mb-3">{cert.label}</div>
-                <p className="text-white/50 text-sm leading-relaxed">{cert.description}</p>
+                <p className="text-white/75 text-sm leading-relaxed">{cert.description}</p>
               </motion.div>
             );
           })}

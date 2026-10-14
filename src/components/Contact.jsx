@@ -86,7 +86,7 @@ export default function Contact() {
           <motion.p
             custom={2}
             variants={fadeInUp}
-            className="max-w-2xl mx-auto text-text-muted text-lg"
+            className="max-w-2xl mx-auto text-gray-600 text-lg"
           >
             Let us know how we can assist your next project.
           </motion.p>
@@ -268,7 +268,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-text-dark mb-0.5">Address</h4>
-                  <p className="text-sm text-text-muted leading-relaxed">
+                  <p className="text-sm text-gray-600 leading-relaxed">
                     Building 8053, Prince Nawaf Ibn Abdulaziz St,<br />
                     Al Khubar Ash Shamaliyah Dist., Al Khobar 34426,<br />
                     Kingdom of Saudi Arabia
@@ -282,7 +282,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-text-dark mb-0.5">Company Registration</h4>
-                  <p className="text-sm text-text-muted">CR: 7052382889</p>
+                  <p className="text-sm text-gray-600">CR: 7052382889</p>
                 </div>
               </div>
 
@@ -292,7 +292,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-text-dark mb-0.5">Contact Details</h4>
-                  <p className="text-sm text-text-muted leading-relaxed">
+                  <p className="text-sm text-gray-600 leading-relaxed">
                     <span className="font-medium text-text-dark">Line:</span> +966 13 823 4533<br />
                     <span className="font-medium text-text-dark">Official Number:</span> +966 55 900 2508
                   </p>

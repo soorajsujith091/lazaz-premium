@@ -31,7 +31,7 @@ export default function ClientsMarquee() {
           <h2 id="clients-heading" className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-dark leading-tight mb-4">
             Trusted by Industry Leaders
           </h2>
-          <p className="max-w-2xl mx-auto text-text-muted text-lg">
+          <p className="max-w-2xl mx-auto text-gray-600 text-lg">
             Proudly serving the Kingdom&apos;s most prominent organizations and international partners.
           </p>
         </motion.div>
@@ -69,7 +69,7 @@ export default function ClientsMarquee() {
               key={`row2-${index}`}
               className="flex-shrink-0 px-6 py-3 bg-bg-neutral rounded-lg border border-gray-100 hover:border-secondary-teal/20 hover:shadow-sm transition-all duration-300"
             >
-              <span className="text-sm font-bold text-text-muted whitespace-nowrap tracking-wide">
+              <span className="text-sm font-bold text-gray-600 whitespace-nowrap tracking-wide">
                 {client}
               </span>
             </div>
@@ -85,7 +85,7 @@ export default function ClientsMarquee() {
         transition={{ delay: 0.6 }}
         className="text-center mt-10"
       >
-        <span className="text-text-muted text-sm font-medium">
+        <span className="text-gray-500 text-sm font-medium">
           <span className="text-primary-blue font-bold">{clients.length}+</span> trusted partners and growing
         </span>
       </motion.div>

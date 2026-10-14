@@ -1,0 +1,21 @@
+// Local, category-specific photos for the service detail galleries.
+export const productGallery = {
+  'construction-materials': ['/steel_rebar.png', '/construction-materials.png'],
+  'steel-rebar': ['/lazaz_construction_material.png', '/construction_materials.png'],
+  'cement-concrete': ['/construction_materials.png', '/industrial-construction-site.jpg'],
+  'crusher-asphalt': ['/scene-construction-site-with-equipment.jpg', '/heavy-equipment.png'],
+  'electrical-materials': [],
+  'plumbing-materials': ['/lazaz_industrial_parts.png'],
+  'ceramics-tiles': ['/construction-materials.png'],
+  'paints-coatings': [],
+  'wood-timber': ['/construction_materials.png'],
+  'office-facilities': ['/lazaz_site_facilities.png'],
+  'heavy-equipment-parts': ['/lazaz_industrial_parts.png', '/lazaz_heavy_equipment.png'],
+  'chemicals-scientific': [],
+  'food-beverage': [],
+  'oil-gas-energy': ['/lazaz_oil_gas.png', '/oil-gas-facility.png'],
+  'heavy-rental': ['/heavy-equipment.png', '/scene-construction-site-with-equipment.jpg'],
+  'scrap-waste': [],
+  'industrial-spare-parts': ['/scene-construction-site-with-equipment.jpg'],
+  'site-facilities': ['/office-facilities.jpg', '/oil-gas-facility.png'],
+};

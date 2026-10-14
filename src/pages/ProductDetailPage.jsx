@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { productsData } from '../data/productsData';
+import { productGallery } from '../data/productGallery';
 import PageHero from '../components/PageHero';
 
 export default function ProductDetailPage() {
@@ -113,14 +114,10 @@ export default function ProductDetailPage() {
           >
             <h3 className="text-2xl font-bold text-text-dark mb-8">Related Gallery</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-              {[
-                'https://images.unsplash.com/photo-1541888086225-f67375dbfb00?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1504307651254-35680f356f27?auto=format&fit=crop&q=80&w=800',
-                'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80&w=800'
-              ].map((imgUrl, idx) => (
+              {[product.image, ...(productGallery[product.id] || [])].map((imgUrl, idx) => (
                 <div key={idx} className="aspect-square rounded-2xl overflow-hidden group cursor-pointer relative shadow-sm hover:shadow-xl transition-all duration-300">
                   <img 
-                    src={product.image !== imgUrl && idx === 0 ? product.image : imgUrl} 
+                    src={imgUrl}
                     alt={`${product.name} Gallery ${idx + 1}`}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
                     loading="lazy"

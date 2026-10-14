@@ -45,7 +45,7 @@ export default function CTABand() {
             Ready to Build Something
             <span className="gradient-text"> Extraordinary?</span>
           </h2>
-          <p className="text-lg sm:text-xl text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/85 mb-10 max-w-2xl mx-auto leading-relaxed">
             Get in touch with us for quotations, technical assistance, or partnership inquiries.
           </p>
           <a

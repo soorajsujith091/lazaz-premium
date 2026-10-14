@@ -40,7 +40,7 @@ export default function Products() {
           <motion.p
             custom={2}
             variants={cardVariant}
-            className="max-w-2xl mx-auto text-text-muted text-lg"
+            className="max-w-2xl mx-auto text-gray-600 text-lg"
           >
             Comprehensive sourcing across every major industrial and construction category.
           </motion.p>
@@ -100,7 +100,7 @@ export default function Products() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.8 }}
-          className="text-center text-sm text-text-muted mt-6"
+          className="text-center text-sm text-gray-500 mt-6"
         >
           Site Facilities include: Portable Cabins, Generators, AC Units, Printers &amp; PCs
         </motion.p>

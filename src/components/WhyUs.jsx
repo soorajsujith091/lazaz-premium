@@ -73,7 +73,7 @@ export default function WhyUs() {
           <motion.p
             custom={2}
             variants={fadeInUp}
-            className="max-w-2xl mx-auto text-text-muted text-lg"
+            className="max-w-2xl mx-auto text-gray-600 text-lg"
           >
             A partner that delivers quality, compliance, and end-to-end reliability.
           </motion.p>
@@ -133,7 +133,7 @@ export default function WhyUs() {
                 </div>
 
                 <h3 className="text-xl font-bold text-text-dark mb-3">{feature.title}</h3>
-                <p className="text-text-muted leading-relaxed">{feature.description}</p>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </motion.div>
             );
           })}

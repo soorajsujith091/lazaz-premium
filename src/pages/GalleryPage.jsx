@@ -16,17 +16,17 @@ const categories = ['All', 'Trading', 'Heavy Equipment', 'Oil & Gas', 'Supplies'
 
 const galleryImages = [
   { src: '/lazaz_construction_material.png', category: 'Supplies', title: 'Construction Materials' },
-  { src: '/lazaz_heavy_equipment.png', category: 'Heavy Equipment', title: 'Crane Rental' },
+  { src: '/heavy-equipment.png', category: 'Heavy Equipment', title: 'Heavy Equipment Rental' },
   { src: '/lazaz_industrial_parts.png', category: 'Supplies', title: 'Industrial Spare Parts' },
   { src: '/lazaz_automobile_fleet.png', category: 'Trading', title: 'Automobile Fleet' },
   { src: '/lazaz_oil_gas.png', category: 'Oil & Gas', title: 'Energy Procurement' },
   { src: '/lazaz_site_facilities.png', category: 'Supplies', title: 'Site Facilities' },
-  { src: '/lazaz_construction_material.png', category: 'Trading', title: 'Chemical Supplies' },
-  { src: '/lazaz_automobile_fleet.png', category: 'Trading', title: 'F&B Distribution' },
-  { src: '/lazaz_industrial_parts.png', category: 'Trading', title: 'Scrap Processing' },
-  { src: '/lazaz_heavy_equipment.png', category: 'Supplies', title: 'Mechanical Parts' },
-  { src: '/lazaz_oil_gas.png', category: 'Heavy Equipment', title: 'Excavators' },
-  { src: '/lazaz_site_facilities.png', category: 'Oil & Gas', title: 'Refinery Components' },
+  { src: '/chemicals-scientific.jpg', category: 'Trading', title: 'Chemical Supplies' },
+  { src: '/food-beverage.jpg', category: 'Trading', title: 'F&B Distribution' },
+  { src: '/scrap-waste.jpg', category: 'Trading', title: 'Waste Management' },
+  { src: '/electrical-materials.jpg', category: 'Supplies', title: 'Electrical Supply' },
+  { src: '/lazaz_heavy_equipment.png', category: 'Heavy Equipment', title: 'Excavators' },
+  { src: '/oil-gas-facility.png', category: 'Oil & Gas', title: 'Energy Facilities' },
 ];
 
 export default function GalleryPage() {
@@ -77,7 +77,7 @@ export default function GalleryPage() {
             <AnimatePresence mode="popLayout">
               {filteredImages.map((img, i) => (
                 <motion.div
-                  key={img.src}
+                  key={img.title}
                   layout
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
