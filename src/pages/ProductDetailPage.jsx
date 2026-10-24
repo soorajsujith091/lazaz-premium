@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { productsData } from '../data/productsData';
-import { productGallery } from '../data/productGallery';
+import { productGallery, galleryPhotos } from '../data/productGallery';
 import PageHero from '../components/PageHero';
 
 export default function ProductDetailPage() {
@@ -25,6 +25,8 @@ export default function ProductDetailPage() {
   if (!product) return null;
 
   const Icon = product.icon;
+  const relatedImages = [product.image, ...(productGallery[product.id] || [])]
+    .filter((image) => galleryPhotos.has(image));
 
   return (
     <div className="bg-white min-h-screen">
@@ -105,6 +107,7 @@ export default function ProductDetailPage() {
         </div>
 
         {/* Gallery Section */}
+        {relatedImages.length > 0 && (
         <div className="mt-20 pt-16 border-t border-gray-100">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -114,7 +117,7 @@ export default function ProductDetailPage() {
           >
             <h3 className="text-2xl font-bold text-text-dark mb-8">Related Gallery</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-              {[product.image, ...(productGallery[product.id] || [])].map((imgUrl, idx) => (
+              {relatedImages.map((imgUrl, idx) => (
                 <div key={idx} className="aspect-square rounded-2xl overflow-hidden group cursor-pointer relative shadow-sm hover:shadow-xl transition-all duration-300">
                   <img 
                     src={imgUrl}
@@ -128,6 +131,7 @@ export default function ProductDetailPage() {
             </div>
           </motion.div>
         </div>
+        )}
       </section>
     </div>
   );

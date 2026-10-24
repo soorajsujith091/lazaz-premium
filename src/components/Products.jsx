@@ -80,7 +80,7 @@ export default function Products() {
                       <IconComponent className="w-6 h-6 text-white" strokeWidth={1.8} />
                     </div>
                   </div>
-                  
+
                   {/* Text Section */}
                   <div className="p-6 flex-grow flex flex-col">
                     <h3 className="text-lg font-bold text-text-dark mb-2 group-hover:text-secondary-teal transition-colors duration-300">

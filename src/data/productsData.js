@@ -105,7 +105,7 @@ export const productsData = [
     id: 'food-beverage', 
     name: 'Food & Beverage Trading', 
     icon: Coffee, 
-    image: '/food-beverage.jpg',
+    image: '/food-distribution.png',
     description: 'Reliable distribution of bulk food products and beverages, catering to large-scale catering services, site camps, and commercial hospitality sectors.',
     features: ['Bulk provisions', 'Fresh & frozen goods', 'Beverage supply', 'Strict hygiene standards']
   },

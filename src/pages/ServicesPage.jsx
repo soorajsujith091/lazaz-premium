@@ -53,7 +53,7 @@ const services = [
     num: '07',
     title: 'Food & Beverage Trading',
     desc: 'Trading and distribution of quality food and beverage products to meet various commercial and industrial needs.',
-    image: '/food-beverage.jpg'
+    image: '/food-distribution.png'
   },
   {
     num: '08',

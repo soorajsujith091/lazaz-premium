@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import PageHero from '../components/PageHero';
+import { galleryImages } from '../data/galleryImages';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -12,22 +13,11 @@ const fadeUp = {
   }),
 };
 
-const categories = ['All', 'Trading', 'Heavy Equipment', 'Oil & Gas', 'Supplies'];
 
-const galleryImages = [
-  { src: '/lazaz_construction_material.png', category: 'Supplies', title: 'Construction Materials' },
-  { src: '/heavy-equipment.png', category: 'Heavy Equipment', title: 'Heavy Equipment Rental' },
-  { src: '/lazaz_industrial_parts.png', category: 'Supplies', title: 'Industrial Spare Parts' },
-  { src: '/lazaz_automobile_fleet.png', category: 'Trading', title: 'Automobile Fleet' },
-  { src: '/lazaz_oil_gas.png', category: 'Oil & Gas', title: 'Energy Procurement' },
-  { src: '/lazaz_site_facilities.png', category: 'Supplies', title: 'Site Facilities' },
-  { src: '/chemicals-scientific.jpg', category: 'Trading', title: 'Chemical Supplies' },
-  { src: '/food-beverage.jpg', category: 'Trading', title: 'F&B Distribution' },
-  { src: '/scrap-waste.jpg', category: 'Trading', title: 'Waste Management' },
-  { src: '/electrical-materials.jpg', category: 'Supplies', title: 'Electrical Supply' },
-  { src: '/lazaz_heavy_equipment.png', category: 'Heavy Equipment', title: 'Excavators' },
-  { src: '/oil-gas-facility.png', category: 'Oil & Gas', title: 'Energy Facilities' },
-];
+
+
+
+const categories = ['All', ...new Set(galleryImages.map((image) => image.category))];
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -47,6 +37,7 @@ export default function GalleryPage() {
       />
 
       {/* ── Gallery ── */}
+      {galleryImages.length > 0 && (
       <section className="py-20 sm:py-28 bg-white">
         <div className="px-8 sm:px-14 lg:px-20">
           {/* Filter Tabs */}
@@ -107,6 +98,7 @@ export default function GalleryPage() {
           </div>
         </div>
       </section>
+      )}
 
       {/* ── Lightbox ── */}
       <AnimatePresence>
