@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { productsData } from '../data/productsData';
 import { productGallery, galleryPhotos } from '../data/productGallery';
+import { galleryImages } from '../data/galleryImages';
 import PageHero from '../components/PageHero';
 
 export default function ProductDetailPage() {
@@ -52,7 +53,7 @@ export default function ProductDetailPage() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="rounded-3xl overflow-hidden shadow-2xl relative"
+            className="product-photo-stage"
           >
             <div className="aspect-[4/3] w-full">
               <img 
@@ -61,6 +62,7 @@ export default function ProductDetailPage() {
                 className="w-full h-full object-cover"
               />
             </div>
+            <div className="product-photo-blend" aria-hidden="true" />
             <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg">
               <Icon className="w-8 h-8 text-secondary-teal" />
             </div>
@@ -108,25 +110,27 @@ export default function ProductDetailPage() {
 
         {/* Gallery Section */}
         {relatedImages.length > 0 && (
-        <div className="mt-20 pt-16 border-t border-gray-100">
+        <div className="project-showcase related-showcase mt-20 p-6 sm:p-10 lg:p-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-bold text-text-dark mb-8">Related Gallery</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+            <p className="text-xs text-teal-300 font-bold uppercase tracking-[0.2em] mb-3">From the project site</p>
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-8">Our expertise in action</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {relatedImages.map((imgUrl, idx) => (
-                <div key={idx} className="aspect-square rounded-2xl overflow-hidden group cursor-pointer relative shadow-sm hover:shadow-xl transition-all duration-300">
+                <figure key={imgUrl} className={`project-photo group ${idx === 0 && relatedImages.length > 2 ? 'sm:col-span-2 lg:col-span-2' : ''}`}>
                   <img 
                     src={imgUrl}
                     alt={`${product.name} Gallery ${idx + 1}`}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                    className="project-photo-image"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300"></div>
-                </div>
+                  <div className="project-photo-shade" />
+                  <figcaption className="absolute bottom-0 inset-x-0 p-6 text-white font-bold text-lg">{galleryImages.find((image) => image.src === imgUrl)?.title || product.name}</figcaption>
+                </figure>
               ))}
             </div>
           </motion.div>

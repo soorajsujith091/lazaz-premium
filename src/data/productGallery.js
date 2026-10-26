@@ -3,79 +3,79 @@ import { galleryImages } from './galleryImages';
 // Category-specific project photographs.
 export const productGallery = {
   "construction-materials": [
-    "/gallery/project-05.jpeg",
-    "/gallery/project-12.jpeg",
-    "/gallery/project-15.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.07 PM.jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.09 PM.jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.11 PM (1).jpeg"
   ],
   "steel-rebar": [
-    "/gallery/project-12.jpeg",
-    "/gallery/project-15.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.09 PM.jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.11 PM (1).jpeg"
   ],
   "cement-concrete": [
-    "/gallery/project-04.jpeg",
-    "/gallery/project-16.jpeg",
-    "/gallery/project-17.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.07 PM (2).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.11 PM.jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.12 PM (1).jpeg"
   ],
   "crusher-asphalt": [
-    "/gallery/project-16.jpeg",
-    "/gallery/project-17.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.11 PM.jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.12 PM (1).jpeg"
   ],
   "electrical-materials": [
-    "/gallery/project-06.jpeg",
-    "/gallery/project-07.jpeg",
-    "/gallery/project-13.jpeg",
-    "/gallery/project-14.jpeg",
-    "/gallery/project-17.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.08 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.08 PM (2).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.10 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.10 PM.jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.12 PM (1).jpeg"
   ],
   "plumbing-materials": [
-    "/gallery/project-01.jpeg",
-    "/gallery/project-02.jpeg",
-    "/gallery/project-03.jpeg",
-    "/gallery/project-08.jpeg",
-    "/gallery/project-09.jpeg",
-    "/gallery/project-10.jpeg",
-    "/gallery/project-11.jpeg",
-    "/gallery/project-16.jpeg",
-    "/gallery/project-18.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.06 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.06 PM.jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.07 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.08 PM.jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.09 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.09 PM (2).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.09 PM (3).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.11 PM.jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.12 PM.jpeg"
   ],
   "ceramics-tiles": [],
   "paints-coatings": [],
   "wood-timber": [],
   "office-facilities": [
-    "/gallery/project-04.jpeg",
-    "/gallery/project-12.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.07 PM (2).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.09 PM.jpeg"
   ],
   "heavy-equipment-parts": [
-    "/gallery/project-01.jpeg",
-    "/gallery/project-03.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.06 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.07 PM (1).jpeg"
   ],
   "chemicals-scientific": [
-    "/gallery/project-02.jpeg",
-    "/gallery/project-08.jpeg",
-    "/gallery/project-18.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.06 PM.jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.08 PM.jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.12 PM.jpeg"
   ],
   "food-beverage": [],
   "oil-gas-energy": [
-    "/gallery/project-07.jpeg",
-    "/gallery/project-09.jpeg",
-    "/gallery/project-15.jpeg",
-    "/gallery/project-16.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.08 PM (2).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.09 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.11 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.11 PM.jpeg"
   ],
   "heavy-rental": [
-    "/gallery/project-03.jpeg",
-    "/gallery/project-15.jpeg",
-    "/gallery/project-16.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.07 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.11 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.11 PM.jpeg"
   ],
   "scrap-waste": [],
   "industrial-spare-parts": [
-    "/gallery/project-01.jpeg",
-    "/gallery/project-06.jpeg",
-    "/gallery/project-09.jpeg",
-    "/gallery/project-13.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.06 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.08 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.09 PM (1).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.10 PM (1).jpeg"
   ],
   "site-facilities": [
-    "/gallery/project-04.jpeg",
-    "/gallery/project-12.jpeg"
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.07 PM (2).jpeg",
+    "/gallery1/WhatsApp Image 2026-10-24 at 4.42.09 PM.jpeg"
   ]
 };
 
